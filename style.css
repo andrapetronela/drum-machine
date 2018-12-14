@@ -6,23 +6,33 @@
 
 body {
     font-family: 'Roboto';
+    background: #dd7373;
 }
 
 #drum-machine {
-    background: grey;
-    height: 100vh;
-}
-
-#display {
-    background: purple;
-    width: 30vw;
+    background: #434343;
+    width: 400px;
     margin: auto;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    padding: 1rem;
 }
 
 .drum-pad {
-    background: white;
+    background: #8d8d8d;
     text-align: center;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    grid-column: 2 / 3;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.92);
 }

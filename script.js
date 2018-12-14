@@ -15,40 +15,43 @@ class App extends React.Component {
     
 
     handleQ() {
-        document.getElementById('Q').play();    
+        document.getElementById('Q').play(); 
+        display.textContent = 'heater-1';
     } 
     handleW() {
-        document.getElementById('W').play();    
+        document.getElementById('W').play();
+        display.textContent = 'heater-2';
     } 
     handleE() {
-        document.getElementById('E').play();    
+        document.getElementById('E').play(); 
+        display.textContent = 'heater-3';
     } 
     handleA() {
-        document.getElementById('A').play();    
+        document.getElementById('A').play();
+        display.textContent = 'heater-4';
     } 
     handleS() {
-        document.getElementById('S').play();    
+        document.getElementById('S').play();
+        display.textContent = 'heater-5';
     } 
     handleD() {
-        document.getElementById('D').play();    
+        document.getElementById('D').play(); 
+        display.textContent = 'heater-6';
     } 
     handleZ() {
-        document.getElementById('Z').play();    
+        document.getElementById('Z').play(); 
+        display.textContent = 'heater-7';
     }
     handleX() {
-        document.getElementById('X').play();    
+        document.getElementById('X').play();
+        display.textContent = 'heater-8';
     } 
     handleC() {
-        document.getElementById('C').play();    
+        document.getElementById('C').play();
+        display.textContent = 'heater-9';
     } 
     
-    keyboard(ev) {
-        if (ev.keyCode === 81) {
-            this.handleQ();
-        } else if (ev.keyCode === 87) {
-            this.handleW();
-        }
-        
+    keyboard(ev) {        
         switch(ev.keyCode) {
             case 81:
                 this.handleQ();
@@ -82,14 +85,12 @@ class App extends React.Component {
     
     componentDidMount() {
         document.addEventListener("keydown", this.keyboard);
+        const display = document.getElementById('display-text');
     }
-    
-    
+        
     render() {
         return (
             <div id="drum-machine">
-                Helllllooo
-                <div id="display">
                     <div className="drum-pad" id="Heater-1" onClick={this.handleQ}>Q
                         <audio className="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
                     </div>
@@ -117,6 +118,8 @@ class App extends React.Component {
                     <div className="drum-pad" id="Heater-9" onClick={this.handleC}>C
                         <audio className="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
                     </div>
+                <div id="display">
+                    <p id="display-text"></p>
                 </div>
             </div>
         )
