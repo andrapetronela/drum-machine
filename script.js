@@ -10,8 +10,10 @@ class App extends React.Component {
     this.handleZ = this.handleZ.bind(this);
     this.handleX = this.handleX.bind(this);
     this.handleC = this.handleC.bind(this);
+    this.keyboard = this.keyboard.bind(this);
     }
     
+
     handleQ() {
         document.getElementById('Q').play();    
     } 
@@ -39,6 +41,48 @@ class App extends React.Component {
     handleC() {
         document.getElementById('C').play();    
     } 
+    
+    keyboard(ev) {
+        if (ev.keyCode === 81) {
+            this.handleQ();
+        } else if (ev.keyCode === 87) {
+            this.handleW();
+        }
+        
+        switch(ev.keyCode) {
+            case 81:
+                this.handleQ();
+                break;
+            case 87:
+                this.handleW();
+                break;
+            case 69:
+                this.handleE();
+                break;
+            case 65:
+                this.handleA();
+                break;
+            case 83:
+                this.handleS();
+                break;
+            case 68:
+                this.handleD();
+                break;
+            case 90:
+                this.handleZ();
+                break;
+            case 88:
+                this.handleX();
+                break;
+            case 67:
+                this.handleC();
+                break;
+        }
+    }
+    
+    componentDidMount() {
+        document.addEventListener("keydown", this.keyboard);
+    }
     
     
     render() {
