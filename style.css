@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+#drum-machine {
+    background: grey;
+    height: 100vh;
+}
+
+#display {
+    background: purple;
+    width: 30vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.drum-pad {
+    background: white;
+    text-align: center;
+}
