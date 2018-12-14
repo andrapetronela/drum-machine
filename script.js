@@ -92,10 +92,10 @@ class App extends React.Component {
         return (
             <div id="drum-machine">
                     <div className="drum-pad" id="Heater-1" onClick={this.handleQ}>Q
-                        <audio className="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
+                        <audio className="clip" id="Q" src="q.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-2" onClick={this.handleW}>W
-                        <audio className="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" type="audio/mp3" />
+                        <audio className="clip" id="W" src="w.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-3" onClick={this.handleE}>E
                         <audio className="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" type="audio/mp3" />
