@@ -98,25 +98,25 @@ class App extends React.Component {
                         <audio className="clip" id="W" src="w.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-3" onClick={this.handleE}>E
-                        <audio className="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" type="audio/mp3" />
+                        <audio className="clip" id="E" src="e.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-4" onClick={this.handleA}>A
-                        <audio className="clip" id="A" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
+                        <audio className="clip" id="A" src="a.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-5" onClick={this.handleS}>S
-                        <audio className="clip" id="S" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
+                        <audio className="clip" id="S" src="s.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-6" onClick={this.handleD}>D
-                        <audio className="clip" id="D" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" type="audio/mp3" />
+                        <audio className="clip" id="D" src="d.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-7" onClick={this.handleZ}>Z
-                        <audio className="clip" id="Z" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
+                        <audio className="clip" id="Z" src="z.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-8" onClick={this.handleX}>X
-                        <audio className="clip" id="X" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
+                        <audio className="clip" id="X" src="x.mp3" type="audio/mp3" />
                     </div>
                     <div className="drum-pad" id="Heater-9" onClick={this.handleC}>C
-                        <audio className="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" />
+                        <audio className="clip" id="C" src="c.mp3" type="audio/mp3" />
                     </div>
                 <div id="display">
                     <p id="display-text"></p>
