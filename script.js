@@ -90,7 +90,8 @@ class App extends React.Component {
         
     render() {
         return (
-            <div id="drum-machine">
+            <div id="wrapper">
+                <div id="drum-machine">
                     <div className="drum-pad" id="Heater-1" onClick={this.handleQ}>Q
                         <audio className="clip" id="Q" src="q.mp3" type="audio/mp3" />
                     </div>
@@ -122,6 +123,8 @@ class App extends React.Component {
                     <p id="display-text"></p>
                 </div>
             </div>
+            <p id="song-link">Full song can be found <a href="https://www.youtube.com/watch?v=mfJhMfOPWdE" target="_blank"> here</a>.</p>
+        </div>
         )
     }
 }

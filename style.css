@@ -6,18 +6,20 @@
 
 body {
     font-family: 'Roboto';
-    background: #dd7373;
+    background: #cfd1cb;
 }
 
 #drum-machine {
-    background: #434343;
+    background: #212121;
     width: 400px;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .drum-pad {
@@ -29,10 +31,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
+}
+
+.drum-pad:hover {
+    transform: scale(.95);
+    background: white;
+}
+
+.drum-pad:active {
+    border: 5px solid #a3a3a3;
 }
 
 #display {
     grid-column: 2 / 3;
     margin: auto;
     color: rgba(255, 255, 255, 0.92);
+}
+
+#song-link {
+    margin-top: 2rem;
+    text-align: center; 
+}
+
+#song-link a:link, 
+#song-link a:visited {
+    color: #0c60a8;
+}
+
+#song-link a:hover,
+#song-link a:active {
+    color: #283746;
 }
